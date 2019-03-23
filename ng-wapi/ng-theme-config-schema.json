@@ -8,11 +8,7 @@
             "$ref": "#/definitions"
         },
         "phpExprToJsConstList": {
-            "type": "array",
-            "description": "Data-items to build a JavaScript-Constants from a PHP-Expressions",
-            "items": {
-                "$ref": "#/definitions/PhpExprToJsConst"
-            }
+            "$ref": "#/definitions/PhpExprToJsConstList"
         }
     },
     "required": [
@@ -21,6 +17,13 @@
     ],
     "additionalProperties": true,
     "definitions": {
+        "PhpExprToJsConstList": {
+            "type": "array",
+            "description": "Data-items to build a JavaScript-Constants from a PHP-Expressions",
+            "items": {
+                "$ref": "#/definitions/PhpExprToJsConst"
+            }
+        },
         "PhpExprToJsConst": {
             "type": "object",
             "description": "Data-item to build a JavaScript-Constant from a PHP-Expression",

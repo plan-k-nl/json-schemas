@@ -1,0 +1,40 @@
+{
+    "$id": "https://raw.githubusercontent.com/dgwnu/ng-joint-schematics/ng73x/src/data/ng-joint-schematic-data-schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Schema for the Plan-K NL WordPress Angular 7x Theme examples",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "$ref": "#/definitions"
+        },
+        "phpExprToJsConstList": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/PhpExprToJsConst"
+            }
+        }
+    },
+    "required": [
+        "defaults",
+        "shapes"
+    ],
+    "additionalProperties": true,
+    "definitions": {
+        "PhpExprToJsConst": {
+            "type": "object",
+            "description": "Data to build a JavaScript-Constant from a PHP-Expression",
+            "properties": {
+                "jsConst": {
+                    "type": "string",
+                    "description": "JavaScript-Constant"
+                },
+                "phpExpr": {
+                    "type": "string",
+                    "description": "PHP-Expression"
+                }
+
+            }
+        }
+
+    }
+}

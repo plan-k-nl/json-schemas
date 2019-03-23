@@ -9,17 +9,21 @@
         },
         "phpExprToJsConstList": {
             "type": "array",
-            "description": "Data-items to build a JavaScript-Constants from a PHP-Expressions",
+            "description": "List with Data-items to build a JavaScript-Constants from a PHP-Expressions",
             "items": {
                 "$ref": "#/definitions/PhpExprToJsConst"
             }
         },
         "jsExprToJsConstList": {
             "type": "array",
-            "description": "Data-items to build a JavaScript-Constants from a PHP-Expressions",
+            "description": "List with Data-items to build a JavaScript-Constants from a PHP-Expressions",
             "items": {
                 "$ref": "#/definitions/JsExprToJsConst"
             }
+        },
+        "wpOptionsList": {
+            "type": "array",
+            "description": "List with WordPress PHP API Options to be converted as JavaScript-Constants"
         }
     },
     "required": [

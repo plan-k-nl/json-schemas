@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/dgwnu/ng-joint-schematics/ng73x/src/data/ng-joint-schematic-data-schema.json",
+    "$id": "https://raw.githubusercontent.com/plan-k-nl/json-schemas/master/ng-wapi/ng-theme-config-schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Schema for the Plan-K NL WordPress Angular 7x Theme examples",
     "type": "object",

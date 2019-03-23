@@ -13,11 +13,16 @@
             "items": {
                 "$ref": "#/definitions/PhpExprToJsConst"
             }
+        },
+        "jsExprToJsConstList": {
+            "type": "array",
+            "description": "Data-items to build a JavaScript-Constants from a PHP-Expressions",
+            "items": {
+                "$ref": "#/definitions/JsExprToJsConst"
+            }
         }
     },
     "required": [
-        "defaults",
-        "shapes"
     ],
     "additionalProperties": true,
     "definitions": {
@@ -33,8 +38,31 @@
                     "type": "string",
                     "description": "PHP-Expression"
                 }
-
-            }
+            },
+            "required": [
+                "jsConst",
+                "phpExpr"
+            ],
+            "additionalProperties": false       
+        },
+        "JsExprToJsConst": {
+            "type": "object",
+            "description": "Data-item to build a JavaScript-Constant from a JavaScript-Expression",
+            "properties": {
+                "jsConst": {
+                    "type": "string",
+                    "description": "JavaScript-Constant"
+                },
+                "jsExpr": {
+                    "type": "string",
+                    "description": "JavaScript-Expression"
+                }
+            },
+            "required": [
+                "jsConst",
+                "jsExpr"
+            ],
+            "additionalProperties": false       
         }
 
     }

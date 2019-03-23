@@ -4,9 +4,6 @@
     "description": "Schema for the Plan-K NL WordPress Angular 7x Theme examples",
     "type": "object",
     "properties": {
-        "$schema": {
-            "$ref": "#/"
-        },
         "phpExprToJsConstList": {
             "type": "array",
             "description": "List with Data-items to build a JavaScript-Constants from a PHP-Expressions",
@@ -31,7 +28,7 @@
     },
     "required": [
     ],
-    "additionalProperties": true,
+    "additionalProperties": false,
     "definitions": {
         "PhpExprToJsConst": {
             "type": "object",
